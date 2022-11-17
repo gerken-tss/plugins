@@ -289,7 +289,7 @@ public class CameraCaptureCallbackStatesTest extends TestCase {
             put(CaptureResult.CONTROL_AE_STATE_LOCKED, CameraState.STATE_WAITING_PRECAPTURE_START);
             put(
                 CaptureResult.CONTROL_AE_STATE_FLASH_REQUIRED,
-                CameraState.STATE_WAITING_PRECAPTURE_DONE);
+                CameraState.CONTROL_AE_STATE_FLASH_REQUIRED);
             put(
                 CaptureResult.CONTROL_AE_STATE_PRECAPTURE,
                 CameraState.STATE_WAITING_PRECAPTURE_DONE);
