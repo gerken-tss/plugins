@@ -24,7 +24,7 @@ dependencies:
   camera_android:
     git:
       url: git@github.com:gerken-tss/plugins.git
-      ref: issue-97501-flash-remains-lit
+      ref: issue-97501-and-88070-combined
       path: packages/camera/camera_android
   camera_avfoundation: ^0.9.7+1
   camera_platform_interface: ^2.2.0
