@@ -118,8 +118,7 @@ class CameraCaptureCallback extends CaptureCallback {
           // CONTROL_AE_STATE can be null on some devices
           if (aeState == null
               || aeState == CaptureResult.CONTROL_AE_STATE_CONVERGED
-              || aeState == CaptureResult.CONTROL_AE_STATE_PRECAPTURE
-              || aeState == CaptureResult.CONTROL_AE_STATE_FLASH_REQUIRED) {
+              || aeState == CaptureResult.CONTROL_AE_STATE_PRECAPTURE) {
             setCameraState(CameraState.STATE_WAITING_PRECAPTURE_DONE);
           } else if (captureTimeouts.getPreCaptureMetering().getIsExpired()) {
             Log.w(TAG, "Metering timeout waiting for pre-capture to start, moving on with capture");
