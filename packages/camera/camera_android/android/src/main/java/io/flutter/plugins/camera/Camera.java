@@ -707,10 +707,6 @@ class Camera
           CaptureRequest.CONTROL_AE_PRECAPTURE_TRIGGER,
           CaptureRequest.CONTROL_AE_PRECAPTURE_TRIGGER_IDLE);
 
-      // Set AF state to idle again.
-      previewRequestBuilder.set(
-          CaptureRequest.CONTROL_AF_TRIGGER, CameraMetadata.CONTROL_AF_TRIGGER_IDLE);
-
       captureSession.capture(previewRequestBuilder.build(), null, backgroundHandler);
     } catch (CameraAccessException e) {
       dartMessenger.sendCameraErrorEvent(e.getMessage());
